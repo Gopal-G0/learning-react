@@ -8,7 +8,7 @@ function App() {
     <div>
 
       <b>
-        Hii There
+        Counter App
       </b>
       <Counter></Counter>
     </div>
