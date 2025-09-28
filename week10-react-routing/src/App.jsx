@@ -12,7 +12,7 @@ function App() {
 
       <h2 style = {{
         textAlign: 'center'
-      }}>Card Compoent For Course Website</h2>
+      }}>Card Component For Course Website</h2>
 
     <div style = {{ 
       display: 'grid',
