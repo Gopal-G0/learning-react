@@ -3,12 +3,24 @@ import ProfileCard from './profileCard.jsx'
 import ProductCard from './productCard.jsx'
 import ButtonCard from './ButtonCard.jsx'
 import Alert from './AlertComponent.jsx'
+import CardComponent  from './CardComponent.jsx';
 function App() {
 
   return (
+   
+    <>
+
+      <h2 style = {{
+        textAlign: 'center'
+      }}>Card Compoent For Course Website</h2>
 
     <div style = {{ 
-      display: 'flex'
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+      gap: '15px',
+      justifyItems: 'center',
+      padding: '45px'
+
     }} >
       
       {/* <ProfileCard name = 'Gopal' age = '19' designation = 'Data Engineer' />
@@ -56,11 +68,19 @@ function App() {
 
 
 
-      <Alert type = 'success'> Data Fetched Successfully </Alert>
-      <Alert type = 'warning'> Please the your fetch logic </Alert>
-      <Alert type = 'Error'> Error while Fetching Data </Alert>
+      {/* <Alert type = 'success'> Data Fetched Successfully </Alert>
+      <Alert type = 'warning'> Please check your fetch logic </Alert>
+      <Alert type = 'Error'> Error while Fetching Data </Alert> */}
+
+      
+      <CardComponent title = 'React Basics' image = 'https://www.datocms-assets.com/14946/1638186862-reactjs.png?auto=format&corner-radius=16&fit=crop&h=312&mask=corners&q=45&w=568' />
+      <CardComponent title = 'React Advanced' image = 'https://s3.us-east-1.amazonaws.com/creator-assets.codedamn.com/codedamn-61897bfe60f1140008feb00d/COURSE_IMAGE/2023-02-12/eba1c4863eb1a6576514ccf2b138f6f5b53871e9' />
+      <CardComponent title = 'Tailwind CSS Full Course' image = 'https://miro.medium.com/1*tHpUU_Z2pTMt5G1KfY0ulg.jpeg' />
+      <CardComponent title = 'TypeScript Course' image = 'https://wearedevelopers.imgix.net/magazine/articles/554/images/hero/odPaQHSbArSIFzZbUzlE-1740483365.jpeg?w=720&auto=compress,format' />
 
     </div>
+
+    </>
 
   );
 }
