@@ -7,9 +7,7 @@ export default function CharacterInputBox() {
         fontSize: '16px',
         paddingTop: '15px',
         paddingLeft: '8px',
-        borderRadius: '9px',
-        fontFamily: 'Fira Code'
-
+        borderRadius: '9px'
     }
 
   return (
